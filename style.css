@@ -21,7 +21,7 @@ body {
     background-color: #d0f0ff;
     cursor: pointer;
 }
-.drop {
+.drop, .drop2 {
     display: block;
     width: 300px;
     height: 150px;
@@ -29,4 +29,7 @@ body {
     border: 3px #8b8b8b dashed;
     border-radius: 10px;
     background-color: #f8f8f8;
+}
+.drop2 {
+    background-color: #d3fcff;
 }
