@@ -6,13 +6,21 @@
 </head>
 
 <body>
-    <div class="drag">
-        <span class="dragBox" id="box1"><a>1</a></span>
-        <span class="dragBox" id="box2"><a>2</a></span>
-        <span class="dragBox" id="box3"><a>3</a></span>
-        <span class="dragBox" id="box4"><a>4</a></span>
+    <div class="wrap">
+        <div class="drag">
+            <span class="dragBox" id="box1" draggable="true" ondragstart="dragStart(Event)"
+                ondragend="dragEnd(event)"><a>1</a></span>
+            <span class="dragBox" id="box2" draggable="true" ondragstart="dragStart(Event)"
+                ondragend="dragEnd(event)"><a>2</a></span>
+            <span class="dragBox" id="box3" draggable="true" ondragstart="dragStart(Event)"
+                ondragend="dragEnd(event)"><a>3</a></span>
+            <span class="dragBox" id="box4" draggable="true" ondragstart="dragStart(Event)"
+                ondragend="dragEnd(event)"><a>4</a></span>
+        </div>
+        <div class="drop" ondragover="allowDrop()" ondrop="dropItem(Event)"></div>
     </div>
-    <div class="drop"><h1>Drop here!</h1></div>
+
+    <script src="dragEvent.js"></script>
 </body>
 
 </html>
